@@ -104,3 +104,8 @@ incoming = {"지우개": 4, "노트": 7, "볼펜": 12}  # 입고 내역
 # ✅ {'연필': 10, '지우개': 9, '노트': 10, '볼펜': 12}
 stock.update({i: stock[i] + j if i in stock else j for i, j in incoming.items()})
 print(stock)
+
+# for item, qty in incoming.items():
+#     stock[item] = stock.get(item, 0) + qty
+
+# print(stock)
